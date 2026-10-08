@@ -1,0 +1,16 @@
+{
+  "source_repository": "Omind-Robotics/OmindOS-Manipulation-Release",
+  "source_release_url": "https://github.com/Omind-Robotics/OmindOS-Manipulation-Release/releases/tag/v0.2-runtime.1",
+  "source_release_id": 406248806,
+  "original_published_at": "2026-10-07T23:33:25Z",
+  "source_tag": "v0.2-runtime.1",
+  "source_tag_sha": "5c12806715c87285a55a59f9d4b9a78edadd7dcd",
+  "documentation": {
+    "ATTRIBUTION.md": "67311be95f20bf4a0346bb09e6939924455ce3785f6a0f5df30c2e3c53780d59",
+    "LICENSE": "ed8d2f0ef996158282296feacac10fcd22a12b5360e6926fc320643b974aab46",
+    "README.md": "7b8f6af3fc755edceeb40aade393c640a9e26880a32f6c1b688bb512ee374154",
+    "SHA256SUMS-Customer-Release": "6453ab9d33fa58a360338acfcc3ea771075458255c012aa08398c0d0f08dd761",
+    "VALIDATION.json": "041a17d4cf80724304a2509a0da0375b33fdf9d0c79decfe2ef206bb734ba20d",
+    "manifest.json": "aaf0f120436e97683f7ab9ec797057b9c5ba18ad564ad0342740f1afbe9b95cb"
+  }
+}

@@ -39,3 +39,13 @@ Windows 2022 / Ubuntu 22.04 原生构建各通过 45 项单元测试，打包前
 当前为运动学与静态重力预览，未包含碰撞、接触、侧滑或平衡验证。Windows 原生 ROS 2 节点及 WSL 部署不在本次验收范围。后端业务源码不随包提供；浏览器资源、模型参数和第三方许可说明保留。Windows 包暂未签名。
 
 [保留的 preview.4 发行版](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/tag/v0.2.0-preview.4)
+
+## 历史发行版
+
+以下版本从 Omind-Robotics 原发行仓保留，原标签、附件与 SHA256 不变；说明按原发行时的功能范围保存。
+
+| 版本 | 内容与适用范围 | 使用说明 |
+| --- | --- | --- |
+| [v0.2-runtime.1](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/tag/v0.2-runtime.1) | Linux 离线规划运行包，含十五关节规划、碰撞检查、客户 API 与模型；约 291 MB | [完整说明](history/v0.2-runtime.1/README.md) |
+
+`runtime.1` 是独立的离线规划运行包，桌面 `preview.6` 是三维调参与 ROS 2 预览工作台。两种交付内容分别保留；旧版规划／碰撞 API 不代表已集成到当前桌面工作台。

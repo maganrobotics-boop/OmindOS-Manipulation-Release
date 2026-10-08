@@ -1,0 +1,29 @@
+{
+  "source": "Omind-Robotics/OmindOS-Manipulation-Release",
+  "destination": "maganrobotics-boop/OmindOS-Manipulation-Release",
+  "releases": [
+    {
+      "tag": "v0.2-runtime.1",
+      "tag_sha": "5c12806715c87285a55a59f9d4b9a78edadd7dcd",
+      "source_release_id": 406248806,
+      "title": "OmindOS Manipulation 0.2 — 客户发行包 runtime.1",
+      "prerelease": false,
+      "source_body_sha256": "8a39ca2610fa4d941c6c03f26104ea6da4151d3236bbba73bd86b671ed997569",
+      "body": "> 历史发行版归档。原发布日期：2026-10-07T23:33:25Z。\n> [原发行页](https://github.com/Omind-Robotics/OmindOS-Manipulation-Release/releases/tag/v0.2-runtime.1) · [完整安装与使用说明](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/blob/main/history/v0.2-runtime.1/README.md)。\n> 保留原版本标签、附件及校验值；以下功能和验收范围均属于该历史版本。\n\n---\n\n移动底盘＋俯仰腰关节＋双 RM75-B 七轴机械臂，上半身十五关节。\r\n\r\n下载下方 `OmindOS-Manipulation-0.2-Customer-Release-Linux-amd64.zip` 与 `SHA256SUMS-Customer-Release`，按仓库 README 校验、解压并运行。完整 ZIP 包含客户端、封装运行程序、URDF/网格、参数、API 示例、使用说明和验收记录。\r\n\r\n- 55 项回归通过；脱离源码目录的独立安装与运行验收通过。\r\n- 验证底盘到达/连续停稳后的十五关节规划、碰撞拦截、URDF 修改、取消与超时。\r\n- Linux x86_64；构建及验证环境 glibc 2.39。其他平台需单独验证。\r\n- 当前用于离线几何规划和仿真记录联动，不发送真机运动命令；真机尚未验收。\r\n- 不附送核心算法 `.py` 源码。运行程序采用 Python 编译字节码及依赖库封装，不是源码加密。\r\n\r\nZIP SHA-256：`3cb2895821526cb0f1d9816b5f3fb7f8e89ba664859f74086838f6bdc569b770`\r\n\r\nGitHub 自动生成的 Source code 仅为本公开入口的文档快照，不是可运行客户包。",
+      "assets": [
+        {
+          "name": "OmindOS-Manipulation-0.2-Customer-Release-Linux-amd64.zip",
+          "size": 290667300,
+          "digest": "sha256:3cb2895821526cb0f1d9816b5f3fb7f8e89ba664859f74086838f6bdc569b770",
+          "browser_download_url": "https://github.com/Omind-Robotics/OmindOS-Manipulation-Release/releases/download/v0.2-runtime.1/OmindOS-Manipulation-0.2-Customer-Release-Linux-amd64.zip"
+        },
+        {
+          "name": "SHA256SUMS-Customer-Release",
+          "size": 124,
+          "digest": "sha256:6453ab9d33fa58a360338acfcc3ea771075458255c012aa08398c0d0f08dd761",
+          "browser_download_url": "https://github.com/Omind-Robotics/OmindOS-Manipulation-Release/releases/download/v0.2-runtime.1/SHA256SUMS-Customer-Release"
+        }
+      ]
+    }
+  ]
+}
