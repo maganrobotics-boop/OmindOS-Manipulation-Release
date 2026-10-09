@@ -23,8 +23,11 @@ def api(path, payload=None, method=None):
 
 
 def digest(path):
+    hasher = hashlib.sha256()
     with path.open('rb') as handle:
-        return 'sha256:' + hashlib.file_digest(handle, 'sha256').hexdigest()
+        for block in iter(lambda: handle.read(1024 * 1024), b''):
+            hasher.update(block)
+    return 'sha256:' + hasher.hexdigest()
 
 
 def check_assets(actual, expected, complete=True):
@@ -46,6 +49,18 @@ def main():
     accepted = json.loads((root / 'RELEASE_ACCEPTANCE.json').read_text())
     assert accepted['status'] == 'passed' and accepted['browser']['compiled_executable']
     assert accepted['source_commit'] == manifest['source_commit']
+    try:
+        prior = api('repos/' + repo + '/releases/tags/' + manifest['tag'])
+    except urllib.error.HTTPError as error:
+        if error.code != 404:
+            raise
+    else:
+        if not prior['draft']:
+            assert prior['name'] == manifest['title'] and prior['body'] == notes
+            assert not prior['prerelease']
+            check_assets(prior['assets'], manifest['assets'])
+            print(json.dumps({'published': prior['html_url'], 'verified_assets': len(prior['assets'])}), flush=True)
+            return
     with tempfile.TemporaryDirectory(prefix='omindos-accepted-') as temporary:
         output = Path(temporary)
         archive_zip = output / 'workflow.zip'
