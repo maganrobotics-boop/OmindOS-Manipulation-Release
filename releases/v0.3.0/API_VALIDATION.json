@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "compiled_executable": true,
+  "source_commit": "3c8f7cf11134d6deb04be7926f014f3575827403",
+  "checks": [
+    "read_state_with_local_http_client",
+    "differential_customer_http_api_client_navigation_then_arm",
+    "omnidirectional_customer_http_api_client_navigation_then_arm"
+  ],
+  "results": [
+    {
+      "status": "succeeded",
+      "task_id": "53f44d74c7e043a9bb1356430c9d441a",
+      "drive_type": "differential",
+      "parking_confirmed": true,
+      "stable_stop_s": 0.6,
+      "base_pose": {
+        "x_m": 0.10710770679076738,
+        "y_m": 0.06861603030489195,
+        "yaw_rad": 0.13300982443738654
+      },
+      "arm_samples": 3,
+      "navigation_map_checked": true,
+      "max_tcp_position_error_m": 4.710277376051325e-16
+    },
+    {
+      "status": "succeeded",
+      "task_id": "c8c487c1648d4f0790676532366d4a00",
+      "drive_type": "omnidirectional",
+      "parking_confirmed": true,
+      "stable_stop_s": 0.6,
+      "base_pose": {
+        "x_m": 0.10874519581652381,
+        "y_m": 0.06883184154808537,
+        "yaw_rad": 0.09113706188034752
+      },
+      "arm_samples": 3,
+      "navigation_map_checked": true,
+      "max_tcp_position_error_m": 3.3306690738754696e-16
+    }
+  ]
+}

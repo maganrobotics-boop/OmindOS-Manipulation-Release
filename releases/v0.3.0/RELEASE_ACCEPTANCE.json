@@ -1,0 +1,478 @@
+{
+  "status": "passed",
+  "version": "0.3.0",
+  "source_commit": "3c8f7cf11134d6deb04be7926f014f3575827403",
+  "source": {
+    "source_commit": "3c8f7cf11134d6deb04be7926f014f3575827403",
+    "unit_tests": 79,
+    "unit_status": "passed",
+    "hashes": {
+      "scripts/navigation_kernel.py": "f2922dec474d54625051f9d384a6d22f72e4795934995db3753b02f85ddac407",
+      "scripts/navigation_guard.py": "af07c8898f40903881dc08a064f6fdca6448272be96b707692255f9ea97ebb4a",
+      "scripts/dual_task_planner.py": "1d59d526a76e6c76576bba4974fdbd9373820146f8ab2adff7893790e74cbef0",
+      "scripts/robot_navigation.py": "0d42a61650f754e97b4169a3526b59333b72d5d44f198580be2d0c0fcee04c2a",
+      "scripts/robot_planning.py": "6cb986ee1211d8262cf7b5f6b9dc79960b8c1a6c1cd546baeeb447801f0623ec",
+      "scripts/robot_kinematics.py": "fd37ba8fa84bb68d32d7467d3eb776c13d1098a4f44e4fe1eba3dffce71bce68"
+    },
+    "navigation_source": {
+      "status": "passed",
+      "source_mode": true,
+      "checks": [
+        "two_drive_types_exposed",
+        "differential_arrival_parking_then_actual_runtime2",
+        "omnidirectional_arrival_parking_then_actual_runtime2",
+        "concurrent_arm_and_jog_blocked",
+        "zero_command_and_observed_stop",
+        "fixed_base_during_arm_planning",
+        "imported_map_guard_present_in_arm_planning",
+        "parameter_epoch_invalidates_completed_task",
+        "blocked_goal_no_partial_success",
+        "unknown_map_fail_closed",
+        "cancel_prevents_automatic_arm_task",
+        "estop_cancels_navigation_and_locks_restart",
+        "reset_does_not_resume_task"
+      ],
+      "measurements": [
+        {
+          "drive_type": "differential",
+          "base_pose": {
+            "x_m": 0.10710770679076738,
+            "y_m": 0.06861603030489195,
+            "yaw_rad": 0.13300982443738654
+          },
+          "stable_stop_s": 0.6,
+          "arm_samples": 3,
+          "max_tcp_error_m": 4.710277376051325e-16
+        },
+        {
+          "drive_type": "omnidirectional",
+          "base_pose": {
+            "x_m": 0.10874519581652381,
+            "y_m": 0.06883184154808537,
+            "yaw_rad": 0.09113706188034752
+          },
+          "stable_stop_s": 0.6,
+          "arm_samples": 3,
+          "max_tcp_error_m": 3.3306690738754696e-16
+        }
+      ],
+      "hardware_executed": false,
+      "localization_source": "geometric_simulator"
+    },
+    "source_browser": {
+      "status": "passed",
+      "compiled_executable": false,
+      "headless_shadow_resolution": 512,
+      "checks": [
+        "differential_and_omni_available",
+        "actual_navigation_then_parked_runtime2_path_plays",
+        "arm_controls_locked_while_navigating",
+        "path_and_goal_drawn_in_3D",
+        "omni_lateral_navigation_and_parking",
+        "cancel_navigation_holds_pose_without_arm_playback",
+        "estop_cancels_and_reset_does_not_resume",
+        "mobile_390px_no_overflow"
+      ],
+      "errors": []
+    }
+  },
+  "native_workflow": {
+    "repository": "Omind-Robotics/OmindOS-Navigation",
+    "run_id": 37925233865,
+    "job_id": 113802634047,
+    "artifact_id": 11614184035,
+    "artifact_zip_digest": "sha256:3bc3dba7c0faf05954877205fc5e27a808569f7cdfc4fd36b21445ecfcd24420",
+    "conclusion": "success"
+  },
+  "desktop": {
+    "status": "PASS",
+    "system": "Linux",
+    "machine": "x86_64",
+    "checks": [
+      "manifest_verification",
+      "compiled_executable_without_python_command",
+      "all_local_assets_served",
+      "unconfigured_runtime_reported_without_blocking_local_preview",
+      "connection_options_and_independent_drafts_saved_without_connecting",
+      "eight_packaged_manufacturer_stls_and_sixteen_model_instances",
+      "35_second_dual_arm_gripper_and_base_sequence_without_contact_physics",
+      "four_wheel_forward_reverse_left_right",
+      "saving_connection_selection_preserves_emergency_stop",
+      "estop_rejects_cooperative_sequence",
+      "estop_rejects_motion_and_manual_reset",
+      "saved_configuration_survives_executable_restart",
+      "all_connection_drafts_and_selected_protocol_survive_restart",
+      "desktop_cli_runtime_url_load_run_heartbeat_and_pose_feedback",
+      "estop_forwards_to_ros_preview_and_reset_never_resumes",
+      "missing_runtime_reported_while_local_assets_remain_available",
+      "desktop_rejects_non_loopback_runtime_url"
+    ],
+    "hardware_validated": false,
+    "ros_required": false,
+    "ros_runtime_bundled": false,
+    "native_ros_validation": false,
+    "runtime_bridge_test": "localhost_protocol_fixture",
+    "compiled_executable": true,
+    "variant": "manipulation"
+  },
+  "planning": {
+    "status": "passed",
+    "source_mode": false,
+    "checks": [
+      "actual_coupled_solver",
+      "both_tcp_and_relative_constraints",
+      "fixed_base",
+      "sampled_collision_scope",
+      "obstacle_blocks_path_without_partial_success",
+      "joint_path_planning",
+      "parameter_write_invalidates_completed_path",
+      "calculation_cancel",
+      "software_stop_invalidates_planning"
+    ],
+    "hardware_executed": false,
+    "dynamics_validated": false,
+    "windows_validated": false
+  },
+  "navigation": {
+    "status": "passed",
+    "source_mode": false,
+    "checks": [
+      "two_drive_types_exposed",
+      "differential_arrival_parking_then_actual_runtime2",
+      "omnidirectional_arrival_parking_then_actual_runtime2",
+      "concurrent_arm_and_jog_blocked",
+      "zero_command_and_observed_stop",
+      "fixed_base_during_arm_planning",
+      "imported_map_guard_present_in_arm_planning",
+      "parameter_epoch_invalidates_completed_task",
+      "blocked_goal_no_partial_success",
+      "unknown_map_fail_closed",
+      "cancel_prevents_automatic_arm_task",
+      "estop_cancels_navigation_and_locks_restart",
+      "reset_does_not_resume_task"
+    ],
+    "measurements": [
+      {
+        "drive_type": "differential",
+        "base_pose": {
+          "x_m": 0.10710770679076738,
+          "y_m": 0.06861603030489195,
+          "yaw_rad": 0.13300982443738654
+        },
+        "stable_stop_s": 0.6,
+        "arm_samples": 3,
+        "max_tcp_error_m": 3.7238012298709097e-16
+      },
+      {
+        "drive_type": "omnidirectional",
+        "base_pose": {
+          "x_m": 0.10874519581652381,
+          "y_m": 0.06883184154808537,
+          "yaw_rad": 0.09113706188034752
+        },
+        "stable_stop_s": 0.6,
+        "arm_samples": 3,
+        "max_tcp_error_m": 4.47545209131181e-16
+      }
+    ],
+    "hardware_executed": false,
+    "localization_source": "geometric_simulator"
+  },
+  "browser": {
+    "status": "passed",
+    "compiled_executable": true,
+    "headless_renderer": "SwiftShader",
+    "headless_shadows_enabled": false,
+    "physical_gpu_performance_validated": false,
+    "checks": [
+      "differential_and_omni_available",
+      "actual_navigation_then_parked_runtime2_path_plays",
+      "arm_controls_locked_while_navigating",
+      "path_and_goal_drawn_in_3D",
+      "omni_lateral_navigation_and_parking",
+      "cancel_navigation_holds_pose_without_arm_playback",
+      "estop_cancels_and_reset_does_not_resume",
+      "mobile_390px_no_overflow"
+    ],
+    "errors": []
+  },
+  "browser_environment": {
+    "compiled_executable": true,
+    "environment": "Headless Chromium with SwiftShader software renderer",
+    "initial_shadow_tests": [
+      {
+        "shadow_resolution": 512,
+        "outcome": "connection_watchdog_stopped_task_after_client_poll_gap",
+        "reproduced_without_parallel_api_client": true
+      }
+    ],
+    "test_only_adjustment": "Shadows disabled in browser harness; production application resources unchanged",
+    "backend_api_clients_passed": true,
+    "physical_gpu_performance_validated": false
+  },
+  "customer_api": {
+    "status": "passed",
+    "compiled_executable": true,
+    "source_commit": "3c8f7cf11134d6deb04be7926f014f3575827403",
+    "checks": [
+      "read_state_with_local_http_client",
+      "differential_customer_http_api_client_navigation_then_arm",
+      "omnidirectional_customer_http_api_client_navigation_then_arm"
+    ],
+    "results": [
+      {
+        "status": "succeeded",
+        "task_id": "53f44d74c7e043a9bb1356430c9d441a",
+        "drive_type": "differential",
+        "parking_confirmed": true,
+        "stable_stop_s": 0.6,
+        "base_pose": {
+          "x_m": 0.10710770679076738,
+          "y_m": 0.06861603030489195,
+          "yaw_rad": 0.13300982443738654
+        },
+        "arm_samples": 3,
+        "navigation_map_checked": true,
+        "max_tcp_position_error_m": 4.710277376051325e-16
+      },
+      {
+        "status": "succeeded",
+        "task_id": "c8c487c1648d4f0790676532366d4a00",
+        "drive_type": "omnidirectional",
+        "parking_confirmed": true,
+        "stable_stop_s": 0.6,
+        "base_pose": {
+          "x_m": 0.10874519581652381,
+          "y_m": 0.06883184154808537,
+          "yaw_rad": 0.09113706188034752
+        },
+        "arm_samples": 3,
+        "navigation_map_checked": true,
+        "max_tcp_position_error_m": 3.3306690738754696e-16
+      }
+    ]
+  },
+  "video": {
+    "status": "passed",
+    "version": "0.3.0",
+    "source_commit": "3c8f7cf11134d6deb04be7926f014f3575827403",
+    "source": "Existing unchanged nav3d_native algorithm and runtime.2 kernels; geometric simulation and URDF FK; cinematic presentation overlays",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "duration_s": 32,
+    "frames": 960,
+    "diff_parking_confirmed": true,
+    "omni_parking_confirmed": true,
+    "arm_validated_samples": 31,
+    "max_tcp_position_error_m": 1.2528205883871096e-05,
+    "navigation_map_checked": true,
+    "localization_source": "geometric_simulator",
+    "dynamics_validated": false,
+    "hardware_executed": false,
+    "render_seconds": 335.546,
+    "samples": [
+      {
+        "time_s": 0,
+        "chapter": "OMINDOS / 01 · 统一项目",
+        "base": {
+          "x_m": 0,
+          "y_m": 0,
+          "yaw_rad": 0
+        },
+        "waist_rad": 0,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 2,
+        "chapter": "OMINDOS / 01 · 统一项目",
+        "base": {
+          "x_m": 0,
+          "y_m": 0,
+          "yaw_rad": 0
+        },
+        "waist_rad": 0,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 4,
+        "chapter": "NAVIGATION / 02 · 差速轮绕障",
+        "base": {
+          "x_m": 0,
+          "y_m": 0,
+          "yaw_rad": 0
+        },
+        "waist_rad": 0,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 6,
+        "chapter": "NAVIGATION / 02 · 差速轮绕障",
+        "base": {
+          "x_m": 0.3486233097875112,
+          "y_m": 0.5374273222675341,
+          "yaw_rad": 0.6780812162276023
+        },
+        "waist_rad": 0,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 8,
+        "chapter": "NAVIGATION / 02 · 差速轮绕障",
+        "base": {
+          "x_m": 0.9634342805517191,
+          "y_m": 1.1664016691851522,
+          "yaw_rad": 0.24436396034674965
+        },
+        "waist_rad": 0,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 10,
+        "chapter": "NAVIGATION / 02 · 差速轮绕障",
+        "base": {
+          "x_m": 1.9450998241400541,
+          "y_m": 1.2493320943343296,
+          "yaw_rad": -0.06890027574615114
+        },
+        "waist_rad": 0,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 12,
+        "chapter": "NAVIGATION / 02 · 差速轮绕障",
+        "base": {
+          "x_m": 2.6522682289817894,
+          "y_m": 0.7569795601446399,
+          "yaw_rad": -1.2188790828802216
+        },
+        "waist_rad": 0,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 14,
+        "chapter": "NAVIGATION / 02 · 差速轮绕障",
+        "base": {
+          "x_m": 3.1158660294632545,
+          "y_m": 0.09680625553918398,
+          "yaw_rad": -1.0129949286411597
+        },
+        "waist_rad": 0,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 16,
+        "chapter": "INTERLOCK / 03 · 停车确认",
+        "base": {
+          "x_m": 3.175955575242159,
+          "y_m": 0.023626384150687876,
+          "yaw_rad": -0.03410999223757434
+        },
+        "waist_rad": 0,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 18,
+        "chapter": "MANIPULATION / 04 · 双臂协同",
+        "base": {
+          "x_m": 3.175955575242159,
+          "y_m": 0.023626384150687876,
+          "yaw_rad": -0.03410999223757434
+        },
+        "waist_rad": 0,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 20,
+        "chapter": "MANIPULATION / 04 · 双臂协同",
+        "base": {
+          "x_m": 3.175955575242159,
+          "y_m": 0.023626384150687876,
+          "yaw_rad": -0.03410999223757434
+        },
+        "waist_rad": 0.0008841156030502287,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 22,
+        "chapter": "MANIPULATION / 04 · 双臂协同",
+        "base": {
+          "x_m": 3.175955575242159,
+          "y_m": 0.023626384150687876,
+          "yaw_rad": -0.03410999223757434
+        },
+        "waist_rad": 0.004603357172838236,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 24,
+        "chapter": "MANIPULATION / 04 · 双臂协同",
+        "base": {
+          "x_m": 3.175955575242159,
+          "y_m": 0.023626384150687876,
+          "yaw_rad": -0.03410999223757434
+        },
+        "waist_rad": 0.011737204434187487,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 26,
+        "chapter": "OMNIDIRECTIONAL / 05 · 全向轮",
+        "base": {
+          "x_m": 3.175955575242159,
+          "y_m": 0.023626384150687876,
+          "yaw_rad": -0.03410999223757434
+        },
+        "waist_rad": 0.01605646656012165,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 28,
+        "chapter": "OMNIDIRECTIONAL / 05 · 全向轮",
+        "base": {
+          "x_m": 3.150708595697978,
+          "y_m": 0.37795491608850595,
+          "yaw_rad": -0.000267939692601573
+        },
+        "waist_rad": 0.01605646656012165,
+        "renderer": "webgl"
+      },
+      {
+        "time_s": 30,
+        "chapter": "OMNIDIRECTIONAL / 05 · 全向轮",
+        "base": {
+          "x_m": 3.1569732001159907,
+          "y_m": 0.7216842686157845,
+          "yaw_rad": -2.104711087924033e-06
+        },
+        "waist_rad": 0.01605646656012165,
+        "renderer": "webgl"
+      }
+    ],
+    "errors": [],
+    "codec": "h264",
+    "decoded_frames": 960,
+    "decode_errors": [],
+    "video_size_bytes": 7966256,
+    "video_sha256": "5186a28f8b1181c469d4cb8dc46990bb981db4b460d27f2ca81398044a2e38f1"
+  },
+  "archive": {
+    "file_name": "omindos-workbench-0.3.0-linux-x64.tar.gz",
+    "size": 84562038,
+    "sha256": "0c6e55bb58575c4f41f5546f6fb15eb77d92bc5dbd72739c29f079ffa3544cbc"
+  },
+  "scope": {
+    "ubuntu": "22.04 x86_64",
+    "kinematics": true,
+    "planning": true,
+    "sampled_collision": true,
+    "navigation": true,
+    "localization": "geometric_simulator",
+    "sensor_localization": false,
+    "hardware_executed": false,
+    "dynamics_validated": false,
+    "windows_validated": false
+  },
+  "merge_commit": "90164dbc3276a715aabedbb797195ca42568a0bf",
+  "source_pull_request": "https://github.com/Omind-Robotics/OmindOS-Navigation/pull/19"
+}

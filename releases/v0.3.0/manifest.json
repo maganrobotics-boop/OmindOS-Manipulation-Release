@@ -1,0 +1,52 @@
+{
+  "destination": "maganrobotics-boop/OmindOS-Manipulation-Release",
+  "tag": "v0.3.0",
+  "title": "OmindOS 机械臂统一工作台 0.3.0 · Ubuntu 正式版",
+  "source_commit": "3c8f7cf11134d6deb04be7926f014f3575827403",
+  "workflow_archive_digest": "sha256:3bc3dba7c0faf05954877205fc5e27a808569f7cdfc4fd36b21445ecfcd24420",
+  "download_url": "https://sdmntprwestcentralus.oaiusercontent.com/files/00000000-3a84-81fb-9132-209718dff767/raw?se=2026-10-09T12%3A15%3A46Z&sp=r&sv=2026-02-06&sr=b&scid=01a12086-b19c-70cd-ad0d-4f8531697bd2&skoid=89c13f8f-c33a-46d8-9bf3-ad7158c7790a&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-09T01%3A17%3A52Z&ske=2026-10-10T01%3A17%3A52Z&sks=b&skv=2026-02-06&sig=0w%2BZ593lH%2BH6v9pKJ9SND9Ylb4cVWU04vaM0SArHWZk%3D",
+  "assets": [
+    {
+      "name": "omindos-workbench-0.3.0-linux-x64.tar.gz",
+      "size": 84562038,
+      "digest": "sha256:0c6e55bb58575c4f41f5546f6fb15eb77d92bc5dbd72739c29f079ffa3544cbc",
+      "origin": "artifact"
+    },
+    {
+      "name": "omindos-workbench-0.3.0-linux-x64.tar.gz.sha256",
+      "size": 107,
+      "digest": "sha256:7375898b55deb4b8de289d311a86f45a9b25c1d3c6daad1130b22a00f4ed1172",
+      "origin": "artifact"
+    },
+    {
+      "name": "RELEASE_NOTES.zh-CN.md",
+      "size": 2170,
+      "digest": "sha256:234cf041b43bb973d7b64163cfd4475bc0e17be60cd1d46abf1387497a1fa1ad",
+      "origin": "repository"
+    },
+    {
+      "name": "RELEASE_ACCEPTANCE.json",
+      "size": 15289,
+      "digest": "sha256:35e20e36cb80a5f73f4dbff84e5d89def67e44fefed7ff4ec5f21c2fde878eed",
+      "origin": "repository"
+    },
+    {
+      "name": "NAVIGATION.zh-CN.md",
+      "size": 4196,
+      "digest": "sha256:d216f75839958287112cdb4e24c7e776d854cf7d1a99bbde382f2187c31d0dd2",
+      "origin": "repository"
+    },
+    {
+      "name": "PLANNING.zh-CN.md",
+      "size": 3777,
+      "digest": "sha256:fe52f98487619871bab52fd466d2ff77292a8cb2faf18448bcfa032fa1c66d4a",
+      "origin": "repository"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 570,
+      "digest": "sha256:bebcf017b0f198815510ea54acc06b081a246cecf15fb1b6b9ae0bc0e92fa737",
+      "origin": "repository"
+    }
+  ]
+}
