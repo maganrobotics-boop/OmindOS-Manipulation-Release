@@ -1,4 +1,20 @@
-# OmindOS Manipulation 客户发行版
+# OmindOS 统一机械臂工作台
+
+## Ubuntu 0.2.0 正式版
+
+[正式发行页](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/tag/v0.2.0) · [安装与验收范围](releases/v0.2.0/RELEASE_NOTES.zh-CN.md) · [规划使用说明](releases/v0.2.0/PLANNING.zh-CN.md)
+
+三维工作台已接入 runtime.2 的双臂与共享腰部协同规划内核，按客户完整 URDF、关节限位、TCP 与关节映射计算。支持关节路径、双手共同位移、盒形障碍物、离散碰撞检查、取消和软件停止。运动学规划无需质量、惯量或电机力矩元数据。
+
+本版验收 Ubuntu 22.04 x86_64 的**运动学、路径规划及碰撞检查**。动力学与 Windows 安装包后续升级。安装归档约 84 MB，完整解压后运行 `./OmindOS-Workbench`，无需另装 Python、ROS、Node.js 或 Docker。
+
+59 项回归通过；Ubuntu 编译程序和独立解压包各通过 17 项桌面检查及 9 项规划检查；最终编译包通过 7 项真实浏览器交互检查。附件提供完整验收记录与 SHA256。不包含后端业务源码。
+
+碰撞采用保守包围盒及离散采样，不保证连续无碰撞；结构排除随结果返回。六秒播放只用于观察，不代表控制时序或动力学。本版未做真机验收。
+
+## 旧版发行记录
+
+以下说明保留各旧版发布时的范围和限制；历史 preview 的“未集成碰撞”等表述仅适用于对应旧版。
 
 本仓库提供机械臂与移动双臂工作台的编译发行包、使用说明、演示视频及校验记录。
 

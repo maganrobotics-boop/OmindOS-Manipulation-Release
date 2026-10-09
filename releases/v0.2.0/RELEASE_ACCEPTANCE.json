@@ -1,0 +1,116 @@
+{
+  "status": "passed",
+  "version": "0.2.0",
+  "release_tag": "v0.2.0",
+  "source_commit": "dff1dfe81998083548700a486b9791818f0c7d99",
+  "pull_request": "https://github.com/Omind-Robotics/OmindOS-Navigation/pull/17",
+  "workflow_run": "https://github.com/Omind-Robotics/OmindOS-Navigation/actions/runs/37914739927",
+  "artifact_id": 11609544799,
+  "unit_tests_passed": 59,
+  "native_desktop": {
+    "status": "PASS",
+    "system": "Linux",
+    "machine": "x86_64",
+    "checks": [
+      "manifest_verification",
+      "compiled_executable_without_python_command",
+      "all_local_assets_served",
+      "unconfigured_runtime_reported_without_blocking_local_preview",
+      "connection_options_and_independent_drafts_saved_without_connecting",
+      "eight_packaged_manufacturer_stls_and_sixteen_model_instances",
+      "35_second_dual_arm_gripper_and_base_sequence_without_contact_physics",
+      "four_wheel_forward_reverse_left_right",
+      "saving_connection_selection_preserves_emergency_stop",
+      "estop_rejects_cooperative_sequence",
+      "estop_rejects_motion_and_manual_reset",
+      "saved_configuration_survives_executable_restart",
+      "all_connection_drafts_and_selected_protocol_survive_restart",
+      "desktop_cli_runtime_url_load_run_heartbeat_and_pose_feedback",
+      "estop_forwards_to_ros_preview_and_reset_never_resumes",
+      "missing_runtime_reported_while_local_assets_remain_available",
+      "desktop_rejects_non_loopback_runtime_url"
+    ],
+    "hardware_validated": false,
+    "ros_required": false,
+    "ros_runtime_bundled": false,
+    "native_ros_validation": false,
+    "runtime_bridge_test": "localhost_protocol_fixture",
+    "compiled_executable": true,
+    "variant": "manipulation"
+  },
+  "native_planning": {
+    "status": "passed",
+    "source_mode": false,
+    "checks": [
+      "actual_coupled_solver",
+      "both_tcp_and_relative_constraints",
+      "fixed_base",
+      "sampled_collision_scope",
+      "obstacle_blocks_path_without_partial_success",
+      "joint_path_planning",
+      "parameter_write_invalidates_completed_path",
+      "calculation_cancel",
+      "software_stop_invalidates_planning"
+    ],
+    "hardware_executed": false,
+    "dynamics_validated": false,
+    "windows_validated": false
+  },
+  "fresh_unpack_planning": {
+    "status": "passed",
+    "source_mode": false,
+    "checks": [
+      "actual_coupled_solver",
+      "both_tcp_and_relative_constraints",
+      "fixed_base",
+      "sampled_collision_scope",
+      "obstacle_blocks_path_without_partial_success",
+      "joint_path_planning",
+      "parameter_write_invalidates_completed_path",
+      "calculation_cancel",
+      "software_stop_invalidates_planning"
+    ],
+    "hardware_executed": false,
+    "dynamics_validated": false,
+    "windows_validated": false
+  },
+  "browser": {
+    "status": "passed",
+    "compiled_executable": true,
+    "checks": [
+      "real coupled planning response plays in 3D",
+      "stop locks planning and playback; reset holds pose",
+      "cancel pending calculation without starting playback",
+      "record start then plan edited joint target",
+      "obstacle rejection shown without playback",
+      "URDF-only import plans without mass inertia or motor parameters",
+      "390px mobile layout without overflow"
+    ],
+    "errors": []
+  },
+  "archive": {
+    "filename": "omindos-workbench-0.2.0-linux-x64.tar.gz",
+    "bytes": 84333892,
+    "sha256": "eb1b5ecc8fd8f7f66c873bf66a1b69e07063d1f9ee4807557ae04ea78ed6ce3e"
+  },
+  "kernel_source_commit": "cbe8caf13921002e463355c6a2982e900640c7e0",
+  "kernel_sha256": "1d59d526a76e6c76576bba4974fdbd9373820146f8ab2adff7893790e74cbef0",
+  "package_verify": "passed",
+  "accepted_platform": "Ubuntu 22.04 x86_64",
+  "scope": {
+    "customer_urdf_and_mapping": true,
+    "urdf_without_dynamics_metadata": true,
+    "kinematics": true,
+    "joint_path_planning": true,
+    "dual_arm_waist_coupled_planning": true,
+    "collision": "conservative oriented bounding boxes; discrete samples; structural exclusions returned",
+    "base_and_nonplanning_joints": "fixed",
+    "dynamics_validated": false,
+    "windows_validated": false,
+    "hardware_validated": false,
+    "continuous_collision_validated": false,
+    "trajectory_timing_validated": false,
+    "payload_collision_geometry": false
+  },
+  "backend_source_included": false
+}

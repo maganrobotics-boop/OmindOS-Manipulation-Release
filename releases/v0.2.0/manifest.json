@@ -1,0 +1,46 @@
+{
+  "destination": "maganrobotics-boop/OmindOS-Manipulation-Release",
+  "tag": "v0.2.0",
+  "title": "OmindOS 统一机械臂工作台 0.2.0 · Ubuntu",
+  "source_commit": "dff1dfe81998083548700a486b9791818f0c7d99",
+  "download_url": "https://sdmntprwestus2.oaiusercontent.com/files/00000000-1c04-81f8-93a2-727d92fc0771/raw?se=2026-10-09T10%3A31%3A31Z&sp=r&sv=2026-02-06&sr=b&scid=01a12033-0ab5-76cd-bb03-0bbf83c98ff5&skoid=4b04981f-b1dc-41e0-a770-8ce0d5c8f411&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-09T01%3A30%3A05Z&ske=2026-10-10T01%3A30%3A05Z&sks=b&skv=2026-02-06&sig=ZjdEzoYA9w6xmQG/gq4h0JU4VmlqRCN0k3G%2BEbGVIRI%3D",
+  "workflow_archive_digest": "sha256:edeac7ab84be438e94b2425f73d5033615059d196837193c6c875ef1229ef91a",
+  "assets": [
+    {
+      "name": "omindos-workbench-0.2.0-linux-x64.tar.gz",
+      "size": 84333892,
+      "digest": "sha256:eb1b5ecc8fd8f7f66c873bf66a1b69e07063d1f9ee4807557ae04ea78ed6ce3e",
+      "origin": "artifact"
+    },
+    {
+      "name": "omindos-workbench-0.2.0-linux-x64.tar.gz.sha256",
+      "size": 107,
+      "digest": "sha256:2a9f68266ec68759dc7d399e64206e2ddf1206f2614a871ea042f6c8c2ec05d5",
+      "origin": "artifact"
+    },
+    {
+      "name": "planning-binary-validation.json",
+      "size": 474,
+      "digest": "sha256:c5726c235634d33dac405ed586e3c056e6ed113ca9d0ed5a47693a6250c481d3",
+      "origin": "artifact"
+    },
+    {
+      "name": "planning-fresh-unpack-validation.json",
+      "size": 474,
+      "digest": "sha256:c5726c235634d33dac405ed586e3c056e6ed113ca9d0ed5a47693a6250c481d3",
+      "origin": "artifact"
+    },
+    {
+      "name": "RELEASE_ACCEPTANCE.json",
+      "size": 4343,
+      "digest": "sha256:2629a88b2c7c6b6ad42c10730dcb5a3cf8c33ab442f0bd28aabcfc159d92eb1f",
+      "origin": "repo"
+    },
+    {
+      "name": "RELEASE_NOTES.zh-CN.md",
+      "size": 2963,
+      "digest": "sha256:b4f556ed309e8fd32809cf36dfe633f14422e409fe24490a08f92b12981c3be4",
+      "origin": "repo"
+    }
+  ]
+}

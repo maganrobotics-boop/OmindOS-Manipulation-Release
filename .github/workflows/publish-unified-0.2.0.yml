@@ -1,0 +1,26 @@
+name: Publish accepted unified workbench 0.2.0
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'releases/v0.2.0/manifest.json'
+      - '.github/workflows/publish-unified-0.2.0.yml'
+      - 'scripts/publish_unified.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: unified-workbench-0.2.0
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Publish only accepted pinned Ubuntu assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/publish_unified.py
