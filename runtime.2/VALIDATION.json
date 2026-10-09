@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "version": "0.2",
+  "package_revision": "runtime.2",
+  "independent_source_directory": true,
+  "client_python": "/usr/bin/python3",
+  "validation_platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "checks": [
+    {
+      "name": "example",
+      "status": "passed"
+    },
+    {
+      "name": "dual-task-example",
+      "status": "passed"
+    },
+    {
+      "name": "negative-and-config-checks",
+      "status": "passed"
+    }
+  ],
+  "core_plaintext_files": 0,
+  "dof": 15,
+  "base_final_pose": [
+    4.8,
+    1.5,
+    8.881784197001252e-16
+  ],
+  "phase_history": [
+    "idle",
+    "navigating",
+    "ready",
+    "manipulating",
+    "succeeded"
+  ],
+  "dual_task": {
+    "samples": 17,
+    "metrics": {
+      "max_tcp_position_error_m": 8.914524100734023e-06,
+      "max_tcp_rotation_error_rad": 2.1333664845085412e-05,
+      "max_relative_position_error_m": 2.058413811037513e-05,
+      "max_relative_rotation_error_rad": 4.1594429051667155e-05
+    },
+    "timed": false,
+    "hardware_executed": false
+  },
+  "elapsed_s": 45.65,
+  "hardware": "not tested"
+}

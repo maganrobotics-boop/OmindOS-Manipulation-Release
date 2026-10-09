@@ -2,7 +2,15 @@
 
 本仓库提供机械臂与移动双臂工作台的编译发行包、使用说明、演示视频及校验记录。
 
-## 当前版本
+## 算法运行包 runtime.2
+
+[双臂与腰部协同算法发行页](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/tag/v0.2-runtime.2) · [安装与 SDK 示例](runtime.2/README.zh-CN.md)
+
+Linux x86_64 离线规划运行包，约 306 MB。客户 SDK 新增 `plan_mobile_object_motion`，联合求解两个 RM75-B 末端和共享 pitch 腰部，共十五关节；包含固定抓持关系、任务空间跟踪和整机采样碰撞检查。完整 ZIP 提供 SDK、URDF/网格、参数、封装算法程序、许可证与验收记录。
+
+69 项回归及脱离源码目录的客户包验收通过。当前为局部几何规划和虚拟抓持框架，没有时间参数化、接触力或动力学保证，尚未通过真机验收。构建和独立验收环境为 Ubuntu 24.04 x86_64 / glibc 2.39；其他 Linux 系统需另行验证。本版为算法预发行包。
+
+## 桌面工作台 preview.7
 
 [0.2.0-preview.7 发行页](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/tag/v0.2.0-preview.7)
 

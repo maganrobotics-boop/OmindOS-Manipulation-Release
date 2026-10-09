@@ -1,0 +1,108 @@
+{
+  "product": "OmindOS Manipulation",
+  "version": "0.2",
+  "package_revision": "runtime.2",
+  "prerelease": true,
+  "platform": "Linux x86_64 / Ubuntu 24.04 / glibc 2.39",
+  "simulation_only": true,
+  "source": {
+    "repository": "Omind-Robotics/OmindOS-Manipulation",
+    "pull_request": 1,
+    "merged_commit": "cbe8caf13921002e463355c6a2982e900640c7e0",
+    "tested_head": "1317c93ea27dabc51c284e39943f1a706b0fc24c",
+    "artifact_source_head": "14da7026a98608db1a59cf1cb6e72b854581fd3e",
+    "artifact_build_commit": "1d1b3bfa37363380f6e6069c1a4b632a6ece019c",
+    "artifact_source_difference": [
+      ".github/workflows/community.yml"
+    ],
+    "runtime_source_files_identical": true
+  },
+  "asset": {
+    "file_name": "OmindOS-Manipulation-0.2-Customer-Release-Linux-amd64.zip",
+    "size_bytes": 305720880,
+    "sha256": "a4f9b832dd71e07a3bc2e1e8d3f5e7fcd788265c722c174803779030d3123ddc"
+  },
+  "verification": {
+    "regression_tests": 69,
+    "community_run": 37905832161,
+    "required_jobs": [
+      {
+        "name": "simulation",
+        "conclusion": "success"
+      },
+      {
+        "name": "navigation-runtime",
+        "conclusion": "success"
+      },
+      {
+        "name": "ros2-transport",
+        "conclusion": "success"
+      },
+      {
+        "name": "mobile-integration",
+        "conclusion": "success"
+      }
+    ],
+    "artifact_build_and_install_run": 37905456918,
+    "final_build_and_install_run": 37905832152,
+    "independent_source_directory": true,
+    "core_plaintext_files": 0,
+    "customer_validation": {
+      "status": "passed",
+      "version": "0.2",
+      "package_revision": "runtime.2",
+      "independent_source_directory": true,
+      "client_python": "/usr/bin/python3",
+      "validation_platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "checks": [
+        {
+          "name": "example",
+          "status": "passed"
+        },
+        {
+          "name": "dual-task-example",
+          "status": "passed"
+        },
+        {
+          "name": "negative-and-config-checks",
+          "status": "passed"
+        }
+      ],
+      "core_plaintext_files": 0,
+      "dof": 15,
+      "base_final_pose": [
+        4.8,
+        1.5,
+        8.881784197001252e-16
+      ],
+      "phase_history": [
+        "idle",
+        "navigating",
+        "ready",
+        "manipulating",
+        "succeeded"
+      ],
+      "dual_task": {
+        "samples": 17,
+        "metrics": {
+          "max_tcp_position_error_m": 0.000008914524100734023,
+          "max_tcp_rotation_error_rad": 0.000021333664845085412,
+          "max_relative_position_error_m": 0.00002058413811037513,
+          "max_relative_rotation_error_rad": 0.000041594429051667155
+        },
+        "timed": false,
+        "hardware_executed": false
+      },
+      "elapsed_s": 45.65,
+      "hardware": "not tested"
+    }
+  },
+  "limits": [
+    "Untimed local geometric path",
+    "Fixed base and virtual grasp frames",
+    "Discrete collision validation",
+    "No constrained obstacle detour search",
+    "No physical payload/contact/dynamics model",
+    "Hardware not tested"
+  ]
+}

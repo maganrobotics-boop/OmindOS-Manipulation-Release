@@ -1,0 +1,16 @@
+{
+  "product": "OmindOS Manipulation",
+  "version": "0.2",
+  "package_revision": "runtime.2",
+  "base_commit": "1d1b3bfa37363380f6e6069c1a4b632a6ece019c",
+  "uncommitted_changes": false,
+  "simulation_only": true,
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "source_audit": {
+    "status": "passed",
+    "core_plaintext_files": 0,
+    "packaging": "PyInstaller frozen Python bytecode and shared libraries; not encryption",
+    "runtime_files": 1635
+  }
+}
