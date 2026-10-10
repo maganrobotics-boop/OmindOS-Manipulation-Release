@@ -1,0 +1,26 @@
+name: Publish accepted RM75 workbench 0.3.1
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'releases/v0.3.1/manifest.json'
+      - '.github/workflows/publish-rm75-0.3.1.yml'
+      - 'scripts/publish_rm75_031.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: unified-workbench-0.3.1
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify accepted package and publish pinned Ubuntu assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/publish_rm75_031.py
