@@ -8,6 +8,10 @@
 
 本版适用 Ubuntu 22.04 / 24.04 x86_64。Windows 后续安排；Jetson ARM64 不使用这个 x64 包。
 
+## GitHub 下载超时怎么办？
+
+可使用[国内备用安装包](https://omindos.cn/downloads/navigation/mda1-v0.3.1-0776da5d/omindos-workbench-0.3.1-linux-x64.tar.gz)和[对应校验文件](https://omindos.cn/downloads/navigation/mda1-v0.3.1-0776da5d/omindos-workbench-0.3.1-linux-x64.tar.gz.sha256)。备用包与 GitHub 正式附件的大小及 SHA256 一致，仍只需安装这一份完整包。
+
 ## 如何校验下载？
 
 [下载校验文件](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/download/v0.3.1/omindos-workbench-0.3.1-linux-x64.tar.gz.sha256)，与安装包放在同一目录，然后运行：
