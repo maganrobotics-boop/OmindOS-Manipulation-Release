@@ -4,22 +4,22 @@
 
 ## 我应该下载哪个？
 
-普通用户下载 [Ubuntu 0.3.0 完整安装包](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/download/v0.3.0/omindos-workbench-0.3.0-linux-x64.tar.gz)，约 85 MB。工作台和算法在同一个包内，不需要另装轻量工作台或 runtime.2。
+普通用户下载 [Ubuntu 0.3.1 完整安装包](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/download/v0.3.1/omindos-workbench-0.3.1-linux-x64.tar.gz)，约 88 MB。工作台和算法在同一个包内，不需要另装轻量工作台或 runtime.2。
 
-本版适用 Ubuntu 22.04 x86_64。Windows 后续安排；Jetson ARM64 不使用这个 x64 包。
+本版适用 Ubuntu 22.04 / 24.04 x86_64。Windows 后续安排；Jetson ARM64 不使用这个 x64 包。
 
 ## 如何校验下载？
 
-[下载校验文件](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/download/v0.3.0/omindos-workbench-0.3.0-linux-x64.tar.gz.sha256)，与安装包放在同一目录，然后运行：
+[下载校验文件](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/download/v0.3.1/omindos-workbench-0.3.1-linux-x64.tar.gz.sha256)，与安装包放在同一目录，然后运行：
 
 ```bash
-sha256sum -c omindos-workbench-0.3.0-linux-x64.tar.gz.sha256
+sha256sum -c omindos-workbench-0.3.1-linux-x64.tar.gz.sha256
 ```
 
 该安装包的 SHA256 为：
 
 ```text
-0c6e55bb58575c4f41f5546f6fb15eb77d92bc5dbd72739c29f079ffa3544cbc
+daa2d604f403759fd30825e4d8c886b8065bc2ad727ba176677b9b443bd9a81d
 ```
 
 完整解压后，也可在包目录验证内部文件：
@@ -40,7 +40,7 @@ sha256sum -c omindos-workbench-0.3.0-linux-x64.tar.gz.sha256
 
 ## 可以在自己的程序中调用吗？
 
-可以。同一安装包提供本机 API，默认只监听 `127.0.0.1:8085`。无需另装算法包，工作台程序需保持运行。[API 文档与示例](../releases/v0.3.0/API.zh-CN.md)
+可以。同一安装包提供本机 API，默认只监听 `127.0.0.1:8085`。无需另装算法包，工作台程序需保持运行。[API 文档与示例](../releases/v0.3.1/API.zh-CN.md)
 
 ## 如何升级？
 
@@ -48,6 +48,8 @@ sha256sum -c omindos-workbench-0.3.0-linux-x64.tar.gz.sha256
 
 ## 正式版验收哪些内容？
 
-0.3.0 正式版验收本机运动学、路径规划和几何仿真，包含差速 / 全向导航，以及停车后的双臂与腰部协同。动力学、传感器定位、真机驱动和抓取接触后续升级。
+0.3.1 包含完整 RM75-B / 6FB / 6F CAD。128 项源码回归、10 项原浏览器回归、46 项安装包接口检查、9 项完整 CAD 界面检查通过；正式包另通过独立解压、完整性校验和版本启动检查。
 
-[发行说明与附件](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/tag/v0.3.0)
+0.3.1 正式版验收本机运动学、路径规划和几何仿真，包含差速 / 全向导航，以及停车后的双臂与腰部协同。动力学、传感器定位、真机驱动和抓取接触后续升级。
+
+[发行说明与附件](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/tag/v0.3.1)

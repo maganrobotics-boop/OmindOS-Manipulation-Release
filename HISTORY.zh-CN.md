@@ -4,6 +4,18 @@
 
 # OmindOS 统一机械臂工作台
 
+## Ubuntu 0.3.1 正式版（当前版本）
+
+[发行页](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/tag/v0.3.1) · [发行与验收说明](releases/v0.3.1/RELEASE_NOTES.zh-CN.md)
+
+一个约 88 MB 的 Ubuntu 完整包，新增 RM75-B / 6FB / 6F 整机 CAD、纯运动学配置、实际双 TCP 协同预览，以及 28 个保守碰撞盒和批量配对筛选。完整 CAD 安装版界面 9 项和独立安装接口 46 项通过；正式包由已验收候选晋级，程序、前端和模型保持逐字节一致。
+
+## Ubuntu 0.3.0 正式版
+
+[保留的发行页](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/tag/v0.3.0) · [导航说明](releases/v0.3.0/NAVIGATION.zh-CN.md) · [API](releases/v0.3.0/API.zh-CN.md)
+
+在统一工作台接入差速和全向底盘导航，支持导航到位、对齐、观测停车后衔接双臂与腰部规划。一个约 85 MB 的 Ubuntu 包，提供本机 API，无需额外安装算法或运行依赖；验收范围为本机运动学、路径规划与几何仿真。
+
 ## Ubuntu 0.2.0 正式版
 
 [正式发行页](https://github.com/maganrobotics-boop/OmindOS-Manipulation-Release/releases/tag/v0.2.0) · [安装与验收范围](releases/v0.2.0/RELEASE_NOTES.zh-CN.md) · [规划使用说明](releases/v0.2.0/PLANNING.zh-CN.md)
